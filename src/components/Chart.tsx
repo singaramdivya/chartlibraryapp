@@ -133,7 +133,7 @@ const Chart: React.FC<ChartProps> = ({isDarkMode}) => {
   return (
     <div className={`ChartContainer ${isDarkMode ? 'dark-mode' : ''}`}>
       <TimeframeButtons setTimeframe={setTimeframe} />
-      <div className={`ChartContainer ${isDarkMode ? 'dark-mode' : ''}`}>
+      <div  id='chart-container' className={`ChartContainer ${isDarkMode ? 'dark-mode' : ''}`}>
         <ResponsiveContainer width="100%" height={400}>
           <LineChart data={data} onClick={handleDataPointClick}>
             <CartesianGrid strokeDasharray="3 3" />
